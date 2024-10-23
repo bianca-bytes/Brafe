@@ -1,0 +1,83 @@
+/*RESET*/
+
+body, h1, h2, h3, p, ul{
+padding: 0;
+margin: 0;
+}
+
+body{
+    font-family: Georgia, serif;
+    color: #252525;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.conteiner{
+    display: flex;
+    max-width: 960px;
+    margin: 0  auto;
+}
+
+/* Menu */
+.menu{
+    background-color: #252525;
+    padding: 15px 0;
+}
+
+.menu nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125em;
+}
+
+.menu-nav{
+    flex:1;
+    margin: 0 10px;
+    align-self: center;
+}
+
+.menu-logo{
+    margin: 0 10px;
+}
+
+.menu nav ul{
+    float: right;
+    display: flex;
+    list-style: none;
+}
+
+.menu-nav ul li a{
+    padding: 10px;
+}
+
+/* banner */
+
+.intro{
+    background-image: url(../img/bg-intro.jpg);
+    background-size: cover;
+    padding: 150px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.intro h2{
+    text-transform: uppercase;
+    font-size: 3em;
+
+}
+
+.intro p{
+    font-style: italic;
+    font: size 1.125em;
+}
+
+.intro h2::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background-color: #fff;
+    margin: 10px auto;
+}
