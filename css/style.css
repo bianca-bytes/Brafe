@@ -1,10 +1,9 @@
-/*RESET*/
+/* RESET */
 
 body, h1, h2, h3, p, ul{
-padding: 0;
-margin: 0;
+    padding: 0;
+    margin: 0;
 }
-
 body{
     font-family: Georgia, serif;
     color: #252525;
@@ -14,19 +13,22 @@ body{
     box-sizing: border-box;
 }
 
-.conteiner{
+.container{
     display: flex;
     max-width: 960px;
-    margin: 0  auto;
+    margin: 0 auto;
+    
 }
 
-/* Menu */
+
+/* MENU */
+
 .menu{
     background-color: #252525;
     padding: 15px 0;
 }
 
-.menu nav a{
+.menu-nav a{
     text-decoration: none;
     color: #fff;
     font-size: 1.125em;
@@ -46,13 +48,22 @@ body{
     float: right;
     display: flex;
     list-style: none;
+    
 }
 
 .menu-nav ul li a{
     padding: 10px;
+    
 }
 
-/* banner */
+.menu-nav ul li a:hover {
+    /* Estilos para quando o mouse passar sobre o link */
+    color: burlywood; /* Muda a cor do texto */
+    text-decoration: underline; /* Adiciona um sublinhado */
+  }
+
+
+/* BANNER */
 
 .intro{
     background-image: url(../img/bg-intro.jpg);
@@ -61,16 +72,14 @@ body{
     color: #fff;
     text-align: center;
 }
-
 .intro h2{
     text-transform: uppercase;
     font-size: 3em;
-
 }
 
 .intro p{
     font-style: italic;
-    font: size 1.125em;
+    font-size:1.125em;
 }
 
 .intro h2::after{
@@ -80,4 +89,48 @@ body{
     height: 4px;
     background-color: #fff;
     margin: 10px auto;
+}
+
+
+/* SOBRE */
+
+.sobre{
+    padding: 60px 0;
+}
+
+.sobre h2{
+    font-size: 2.25em;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sobre-item{
+    
+    margin: 0 10px;
+}
+
+.sobre-item img{
+    display: block;
+    max-width: 100%;
+}
+.sobre-item h3{
+    font-size: 2.25em;
+    background-color: #252525;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    width: 220px;
+    padding: 5px 0 10px 0;
+    line-height: 1em;
+    font-weight: normal;
+    position: relative;
+    top:-25px;
+}
+.sobre > p{
+    font-size: 1.125em;
+    line-height: 1.4em;
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 460px;
+    text-align: center;
 }
