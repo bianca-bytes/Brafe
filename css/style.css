@@ -135,6 +135,7 @@ body{
     text-align: center;
 }
 
+
 /* PRODUTOS */
 
 .produtos{
@@ -197,4 +198,43 @@ h2.produtos-mineiros::before{
     width: 180px;
     padding: 15px 0;
     margin: 20px auto;
+}
+
+
+/* Localidades */
+
+.locais{
+    padding: 60px 0;
+}
+
+.locais-item{
+    margin-bottom: 40px;
+}
+.locais-img, .locais-info{
+    flex:1;
+    margin: 0 10px;
+}
+
+.locais-img img{
+    display: block;
+    max-width: 100%;
+}
+
+.locais-item h2{
+    font-size: 2.25em;
+    margin-bottom: 20px;
+}
+.locais-item p{
+    font-size: 1.125em;
+    line-height: 1.4em;
+    max-width: 320px;
+    margin-bottom: 40px;
+}
+.locais-item a{
+    font-size: 1.125em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid;
+    color: #252525;
+    padding: 10px 20px;
 }
